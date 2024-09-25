@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Aventura do Duende Pip</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Era uma manhã ensolarada no Sítio do Tio Harry, e Pip, um duende curioso, decidiu que era hora de uma nova aventura. Enquanto explorava o pomar, ele encontrou uma trilha misteriosa que se perdia entre as árvores.</p>
+            <button class="btn-proximo" data-proximo="1">Seguir a trilha</button>
+            <button class="btn-proximo" data-proximo="2">Voltar para o sítio</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Pip decidiu seguir a trilha e logo chegou a um campo florido, onde viu um grupo de fadas dançando.</p>
+            <button class="btn-proximo" data-proximo="3">Juntar-se à dança</button>
+            <button class="btn-proximo" data-proximo="4">Continuar caminhando</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>Pip decidiu voltar para o sítio, mas sempre se pergunta o que teria encontrado se tivesse seguido a trilha.</p>
+            <img src="img/cenario-passo2-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Ao se juntar à dança, as fadas lhe oferecem um presente: um cogumelo especial que traz uma brisa eterna de alegria.</p>
+            <button class="btn-proximo" data-proximo="5">Comer o cogumelo</button>
+            <button class="btn-proximo" data-proximo="6">Guardar o cogumelo para mais tarde</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Pip decide comer o cogumelo e sente uma onda de felicidade, flutuando em uma nova dimensão.</p>
+            <button class="btn-proximo" data-proximo="7">Explorar a nova dimensão</button>
+            <button class="btn-proximo" data-proximo="8">Tentar voltar para o sítio</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Explorando a nova dimensão, Pip encontra criaturas mágicas e paisagens deslumbrantes. Ele deve encontrar o caminho de volta.</p>
+            <button class="btn-proximo" data-proximo="9">Perguntar a uma criatura mágica sobre o caminho de volta</button>
+            <button class="btn-proximo" data-proximo="10">Tentar navegar sozinho</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Pip decidiu guardar o cogumelo e seguir em frente. Ele logo encontra uma nova pista sobre a cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Investigar a pista</button>
+            <button class="btn-proximo" data-proximo="12">Voltar para o sítio</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Pip pergunta a uma criatura mágica, que lhe dá uma pista, mas pede que ele complete uma missão em troca.</p>
+            <button class="btn-proximo" data-proximo="13">Recolher flores mágicas</button>
+            <button class="btn-proximo" data-proximo="14">Resolver um enigma</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Se Pip decide voltar para o sítio, ele se pergunta o que teria encontrado se tivesse seguido a trilha e a brisa eterna.</p>
+            <img src="img/cenario-passo8-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Pip encontra flores mágicas e cria um encantamento que o ajuda a encontrar o caminho de volta.</p>
+            <button class="btn-proximo" data-proximo="15">Voltar para o sítio</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Pip tenta navegar sozinho, mas se perde em um labirinto mágico.</p>
+            <button class="btn-proximo" data-proximo="16">Pedir ajuda às fadas</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Pip investiga a pista sobre a cidade perdida e descobre que ela está escondida atrás de uma cachoeira mágica.</p>
+            <button class="btn-proximo" data-proximo="17">Explorar a cachoeira</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Pip volta para o sítio, refletindo sobre suas aventuras e a magia que ele encontrou.</p>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>Pip recolhe flores mágicas e, ao retornar, todos no sítio se tornam mais unidos pela magia da amizade.</p>
+            <button class="btn-proximo" data-proximo="18">Organizar uma festa de celebração</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>Pip resolve o enigma e ganha o respeito das criaturas mágicas, que o ajudam a retornar ao sítio.</p>
+            <button class="btn-proximo" data-proximo="19">Agradecer a todos</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <p>Pip finalmente encontra o caminho de volta para casa e reflete sobre suas aventuras.</p>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <p>Pip pede ajuda às fadas e, juntas, elas ajudam Pip a encontrar a saída do labirinto mágico.</p>
+            <button class="btn-proximo" data-proximo="19">Agradecer a todas as fadas</button>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <p>Na cachoeira, Pip encontra inscrições que revelam a entrada da cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="20">Explorar a cidade perdida</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <p>Pip organiza uma grande festa e todos celebram a magia da amizade e as aventuras vividas.</p>
+        </div>
+
+        <div class="passo" id="passo-19">
+            <p>Pip agradece a todos que o ajudaram e promete continuar suas aventuras no sítio, sempre buscando novas histórias.</p>
+        </div>
+
+        <div class="passo" id="passo-20">
+            <img src="img/cenario-passo20-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Dentro da cidade perdida, Pip descobre tesouros inimagináveis e decide se dedicar a estudar e preservar este lugar mágico.</p>
+        </div>
+    </main>
+    <script>
+        const avanca = document.querySelectorAll('.btn-proximo');
+
+        avanca.forEach(button => {
+            button.addEventListener('click', function(){
+                const atual = document.querySelector('.ativo');
+                const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
+
+                atual.classList.remove('ativo');
+                document.getElementById(proximoPasso).classList.add('ativo');
+            })
+        });
+    </script>
+</body>
+</html>
