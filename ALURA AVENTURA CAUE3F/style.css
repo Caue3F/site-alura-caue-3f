@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    background-color: #e0f7fa; /* Cor de fundo suave */
+    color: #333;
+    line-height: 1.6;
+    overflow: hidden; /* Impede a rolagem */
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passo {
+    display: none; /* Oculta os passos que não estão ativos */
+    position: absolute;
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.ativo {
+    display: block; /* Exibe apenas o passo ativo */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4caf50; /* Cor verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Cor verde mais escura ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px; /* Reduz padding em telas pequenas */
+    }
+
+    button {
+        width: 100%; /* Botões ocupam 100% em telas pequenas */
+    }
+}
